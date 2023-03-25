@@ -9,7 +9,9 @@ let footer_info = document.getElementById(`footer_info`);
 //i will be changing the elements style
 title_logo [`style`][`color`] = `red`;
 //now i will add content
-main_p_tags[`innerHTML`] = `this is new content for my main p tags`;
+for(let i=0; i<main_p_tags.length; i++) {
+  main_p_tags[i][`fontSize`] = `2rem`;
+}
 //i will be adding new nested tags
 footer_info.insertAdjacentHTML(`afterbegin` , `<p>this is a new p tag</P>`)
 //adding a new tag using insertAdjacentHTML to put it at the before end 
